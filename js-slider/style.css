@@ -1,0 +1,47 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+.container{
+  width:1200px;
+  margin:0 auto;
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+}
+
+.slider{
+  width:70%;
+  position:relative;
+}
+
+.slider img{
+  width:100%;
+  display:none;
+}
+
+.slider img.visible{
+  display:block;
+}
+
+.prev, .next{
+  position:absolute;
+  top:50%;
+  transform: translateY(-50%);
+  cursor:pointer;
+  font-size: 50px;
+  color:black;
+  background-color:#c7c8c9
+}
+
+.prev{
+  left:0;
+}
+
+.next{
+  right:0;
+}
